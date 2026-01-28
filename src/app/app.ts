@@ -9,4 +9,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('week2');
+
+protected movies = signal([
+  "The Secret Life of Walter Mitty" ,
+  "Fantastic Mr Fox" ,
+  "Interstellar" ,
+  "Goodfellas" ,
+  "Heat"
+]
+)
+
 }
+
+
