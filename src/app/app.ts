@@ -25,6 +25,13 @@ protected favourites =signal<string[]>([]); //empty array
 protected addFave(movies:string) {
   this.favourites.update(current => [...current, movies]);
 }
+
+protected removeFave(index:number){
+  this.favourites.update(favourites =>
+    favourites.filter((_, i) => i!==index)
+  )
 }
+}
+
 
 
