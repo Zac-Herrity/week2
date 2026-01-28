@@ -4,7 +4,7 @@
 <!-- movies below -->
  @for (movie of movies(); track movie){
   <li>
-    {{movie}}
+    <button id="favButton" style="margin-right: 5px;">Favourite</button>{{movie}}
   </li>
  } @empty {
   <li>No Movies Found</li>

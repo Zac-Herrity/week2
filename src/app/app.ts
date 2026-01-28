@@ -19,6 +19,12 @@ protected movies = signal([
 ]
 )
 
+protected favourites =signal<string[]>([]); //empty array
+
+//methods
+protected addFave(movies:string) {
+  this.favourites.update(current => [...current, movies]);
+}
 }
 
 
